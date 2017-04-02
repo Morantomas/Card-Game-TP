@@ -17,12 +17,12 @@ public class Vuelta
     
     public void addMano(Jugador jugador, Carta carta)
     {
-	
+	vuelta.put(jugador, carta);
     }
     
     public Carta cartaDelJugador(Jugador jugador)
     {
-	
+	return vuelta.get(jugador);
     }
     
 }
