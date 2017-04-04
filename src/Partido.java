@@ -14,34 +14,55 @@ import java.util.ArrayList;
 public class Partido {
     
     private ArrayList<Jugador> jugadores;
-    private ArrayList<vuelta> vueltas; // agregar Clase vuelta
+    private ArrayList<Vuelta> vueltas;
     
-    public boolean partido_terminado(){
-        boolean finish=false;
-        if( "jugador" == 10 points){ // Cuando un partido termina
-        finish=true;
-    }
-        return finish;
+    public boolean partidoTerminado()
+    {
+	boolean flag=false;
+	
+	for (Jugador iJugador : jugadores) ///Recorremos
+	{
+	    if (iJugador.getPoints()==10)
+	    {
+		flag=true;
+	    }
+	}
+	
+	return flag;
     }
     
     public ArrayList<Jugador> getJugadores() {
         return jugadores;
     }
     
-    public void add_jugadores(){
+    public void addJugadores(){
         
         Jugador aux= new Jugador();
         jugadores.add(aux);
         
     }
     
-    // public Jugador gGET.GANADOR(); ---> Falta objeto ganador
+    public Jugador getGanador()
+    {
+	Jugador ganador=null;
+	
+	for (Jugador iJugador : jugadores)
+	{
+	    if(iJugador.getPoints()==10)
+		ganador=iJugador;
+	}
+	
+	return ganador;
+    }
     
-    public ArrayList<vuelta> getVueltas() {  // Add class "Vuelta"
+    public ArrayList<Vuelta> getVueltas() {  // Add class "Vuelta"
         return vueltas;
     }
     
-    private Partido(); // Constructor partido.
+    private Partido()
+    {
+	
+    }
     
     
     
