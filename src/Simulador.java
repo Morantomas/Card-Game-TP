@@ -11,9 +11,7 @@
 public class Simulador
 {
     private Partido partido;
-    
     private BarajaEspañola mazo; ///Esto se puede mejorar
-    
     
     public Simulador()
     {
