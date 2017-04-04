@@ -22,6 +22,8 @@ public class BarajaEspañola
     private Stack <Carta> enJuego;
     private ArrayList <Carta> descarte; 
     
+ 
+    
     public BarajaEspañola()
     {
 	
@@ -34,6 +36,7 @@ public class BarajaEspañola
 	for(int i=0;i<descarte.size();i++) ///Ver For Each
 	{
 	    enJuego.push(descarte.get(i));
+            
 	}
 	
 	descarte.clear();
