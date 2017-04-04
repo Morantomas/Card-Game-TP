@@ -12,6 +12,9 @@ public class Simulador
 {
     private Partido partido;
     
+    private BarajaEspañola mazo; ///Esto se puede mejorar
+    
+    
     public Simulador()
     {
 	
@@ -37,9 +40,17 @@ public class Simulador
 	
     }
     
-    public void limpiarConsola()
+    public static void limpiarConsola()
     {
-	
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
     }
     
     public void controlarSimulacion()
