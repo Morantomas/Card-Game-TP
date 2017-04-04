@@ -14,6 +14,7 @@ public class Partido {
 
     private ArrayList<Jugador> jugadores;
     private ArrayList<Vuelta> vueltas;
+<<<<<<< HEAD
 
     public boolean partido_terminado() {
         boolean finish = false;
@@ -21,18 +22,42 @@ public class Partido {
         
         
         return finish;
+=======
+    
+    public boolean partidoTerminado()
+    {
+	boolean flag=false;
+	
+	for (Jugador iJugador : jugadores) ///Recorremos
+	{
+	    if (iJugador.getPoints()==10)
+	    {
+		flag=true;
+	    }
+	}
+	
+	return flag;
+>>>>>>> leo113000/master
     }
 
     public ArrayList<Jugador> getJugadores() {
         return jugadores;
     }
+<<<<<<< HEAD
 
     public void add_jugadores() {
 
         Jugador aux = new Jugador();
+=======
+    
+    public void addJugadores(){
+        
+        Jugador aux= new Jugador();
+>>>>>>> leo113000/master
         jugadores.add(aux);
 
     }
+<<<<<<< HEAD
 
     // public Jugador GET.GANADOR(); ---> Falta objeto ganador
     public ArrayList<Vuelta> getVueltas() {  // Add class "Vuelta"
@@ -41,4 +66,32 @@ public class Partido {
 
     private Partido(); // Constructor partido.
 
+=======
+    
+    public Jugador getGanador()
+    {
+	Jugador ganador=null;
+	
+	for (Jugador iJugador : jugadores)
+	{
+	    if(iJugador.getPoints()==10)
+		ganador=iJugador;
+	}
+	
+	return ganador;
+    }
+    
+    public ArrayList<Vuelta> getVueltas() {  // Add class "Vuelta"
+        return vueltas;
+    }
+    
+    private Partido()
+    {
+	
+    }
+    
+    
+    
+   
+>>>>>>> leo113000/master
 }

@@ -61,9 +61,15 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+<<<<<<< HEAD
 
 build/classes/.netbeans_automatic_build
 
 build/classes/.netbeans_update_resources
 
 nbproject/private/private.xml
+=======
+*.properties
+build/classes/.netbeans_automatic_build
+*.netbeans_update_resources
+>>>>>>> leo113000/master
