@@ -10,8 +10,14 @@
  */
 public class LaCartaMasAlta
 {
-    public static void main (String[] args)
+
+    public static void main(String[] args)
     {
+	System.out.println("Hola");
+
+	Simulador.limpiarConsola();
+
+	System.out.println("Hola");
 	
     }
 }
