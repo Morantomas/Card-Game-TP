@@ -3,38 +3,40 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package pkg1.themajor_card;
 
 /**
  *
- * @author Alien
+ * @author tomasmoran
  */
-
-
-public class Carta
-{
-    private int numero; 
-    private String palo; /// se podría cambiar por un Enum
+public class Carta {
     
-    public Carta(String palo,int numero)
-    {
-	
+    private String palo;
+    private int number;
+    
+    public String getpalo(){
+        return palo;
     }
     
-    public String getPalo()
-    {
-	
+    public int getnumber(){
+        return number;
     }
     
-    public int getNumero()
-    {
-	
-    }
-
     @Override
-    public String toString()
-    {
-	 
+    public String toString(){
+        return "Carta[Palo=" +palo+ "Number="+number+"]";
     }
+    
+    public Carta(){
+        palo="espada";
+        number=5;
+    }
+    
+    
+    
+    
+    
+    
     
     
     

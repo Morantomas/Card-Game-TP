@@ -3,49 +3,47 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-/**
- *
- * @author Alien
- */
+package pkg1.themajor_card;
 
 import java.util.ArrayList;
 
-public class Partido
-{
+/**
+ *
+ * @author tomasmoran
+ */
+public class Partido {
+    
     private ArrayList<Jugador> jugadores;
-    private ArrayList<Vuelta> vueltas;
+    private ArrayList<vuelta> vueltas; // agregar Clase vuelta
     
-    public Partido ()
-    {
-	
+    public boolean partido_terminado(){
+        boolean finish=false;
+        if( "jugador" == 10 points){ // Cuando un partido termina
+        finish=true;
+    }
+        return finish;
     }
     
-    public boolean partidoTerminado()
-    {
-	
+    public ArrayList<Jugador> getJugadores() {
+        return jugadores;
     }
     
-    public ArrayList<Jugador> getJugadores()
-    {
-	
+    public void add_jugadores(){
+        
+        Jugador aux= new Jugador();
+        jugadores.add(aux);
+        
     }
     
-    public void agregarJugador()
-    {
-	
+    // public Jugador gGET.GANADOR(); ---> Falta objeto ganador
+    
+    public ArrayList<vuelta> getVueltas() {  // Add class "Vuelta"
+        return vueltas;
     }
     
-    public Jugador getGanador()
-    {
-	
-    }
-    
-    public ArrayList<Vuelta> getVueltas()
-    {
-	
-    }
+    private Partido(); // Constructor partido.
     
     
-	    
+    
+   
 }

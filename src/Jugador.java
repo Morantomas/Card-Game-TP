@@ -3,51 +3,45 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package pkg1.themajor_card;
 
 /**
  *
- * @author Alien
+ * @author tomasmoran
  */
-public class Jugador
-{
-    private String nombre;
-    private int puntos;
-    private Carta carta;
+public class Jugador {
     
+    private String name;
+    private int points;
+    private Carta card;
     
-    public Jugador(String nombre)
-    {
-	
+    public void Set_card(Carta aux){
+        card=aux;
     }
     
-    public String getNombre()
-    {
-	
-    }
-	    
-    public void setCarta(Carta carta)
-    {
-	
+    public Carta getCard() {
+        return card;
     }
     
-    public Carta getCarta()
-    {
-	
+    public void sumar1punto(){
+        points+=1;
     }
     
-    public int getPuntos()
-    {
-	
+    public int getPoints() {
+        return points;
     }
     
-    public void sumarUnPunto()
-    {
-	
+    public Carta devolver_cartas(){ // Aiuda
+        return card;
     }
     
-    public Carta devolverCarta()
-    {
-	
+    public void player(String name){
+        this.name=name;
     }
+    
+    public String getName() {
+        return name;
+    }
+    
     
 }
