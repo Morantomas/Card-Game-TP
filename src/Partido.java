@@ -14,15 +14,6 @@ public class Partido {
 
     private ArrayList<Jugador> jugadores;
     private ArrayList<Vuelta> vueltas;
-<<<<<<< HEAD
-
-    public boolean partido_terminado() {
-        boolean finish = false;
-        
-        
-        
-        return finish;
-=======
     
     public boolean partidoTerminado()
     {
@@ -37,7 +28,6 @@ public class Partido {
 	}
 	
 	return flag;
->>>>>>> leo113000/master
     }
 
     public ArrayList<Jugador> getJugadores() {

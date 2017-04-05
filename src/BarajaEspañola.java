@@ -21,6 +21,7 @@ public class BarajaEspañola
 {
     private Stack <Carta> enJuego;
     private ArrayList <Carta> descarte; 
+    int numero;
     
  
     
